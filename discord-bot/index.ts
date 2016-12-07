@@ -16,7 +16,7 @@ export default (config: { token: string, googleCseId: string, googleCseKey: stri
 
   client.on('message', (message: Message) => {
     if (!isMessageFromBot(message)) {
-      let messageContent = message.content.replace(new RegExp(` ?<@${client.user.id}> ?`), '');
+      const messageContent = message.content.replace(new RegExp(` ?<@${client.user.id}> ?`), '');
 
       // if not in DM and the bot is not explicitely mentionned, ignore
       if (!(message.channel instanceof DMChannel) && !messageMentionsBot(message)) return;
