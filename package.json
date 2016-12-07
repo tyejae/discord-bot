@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot",
+  "version": "0.2.0",
+  "description": "Bot for discord",
+  "repository": "git@github.com:chadrien/discord-bot.git",
+  "author": "Hadrien de Cuzey <hadrien@decuzey.fr>",
+  "license": "MIT",
+  "scripts": {
+    "start-dev": "NODE_PATH=. ts-node bot.ts",
+    "lint": "NODE_PATH=. tslint 'discord-bot/**/*.ts' && echo OK"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "discord.js": "^10.0.1",
+    "rxjs": "^5.0.0-rc.4"
+  },
+  "devDependencies": {
+    "@types/node": "^0.0.2",
+    "ts-node": "^1.7.0",
+    "tslint": "^4.0.2",
+    "typescript": "^2.0.10",
+    "typings": "^2.0.0"
+  }
+}
