@@ -1,5 +1,5 @@
 export default () => (message: string): Promise<string> => {
-  if (message !== 'ping') return;
+  if (!/ping/i.test(message)) return;
 
   return Promise.resolve('PONG');
 };
