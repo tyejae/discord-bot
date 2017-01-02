@@ -16,7 +16,7 @@ function getRandomYoutubeVideoUrl(searchQuery: string, youtubeApiKey: string, ax
     part: 'snippet',
     type: 'video',
     maxResults: 10,
-    key: youtubeApiKey
+    key: youtubeApiKey,
   };
 
   return Promise.resolve()

@@ -8,6 +8,6 @@ export function createAxiosMock(mockDefinition: { [request: string]: { status: n
       }
 
       return Promise.resolve({ data: response });
-    }
-  }
+    },
+  };
 }

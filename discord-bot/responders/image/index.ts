@@ -26,14 +26,14 @@ function getRandomImageUrl(options: { searchQuery: string, isGifQuery: boolean, 
     searchType: 'image',
     fields: 'items(link)',
     cx: googleCseId,
-    key: googleCseKey
+    key: googleCseKey,
   };
 
   if (isGifQuery) {
     Object.assign(params, {
       fileType: 'gif',
       hq: 'animated',
-      tbs: 'itp:animated'
+      tbs: 'itp:animated',
     });
   }
 

@@ -18,15 +18,15 @@ describe('discord-bot/responders/youtube/index.ts', () => {
     const items = [
       { id: { videoId: 'abc123' } },
       { id: { videoId: 'abc456' } },
-      { id: { videoId: 'zyx123' } }
+      { id: { videoId: 'zyx123' } },
     ];
     const axios = createAxiosMock({
       'GET https://www.googleapis.com/youtube/v3/search': {
         status: 200,
         response: {
-          items
-        }
-      }
+          items,
+        },
+      },
     });
     const responder = YoutubeResponder('', axios);
 
@@ -39,8 +39,8 @@ describe('discord-bot/responders/youtube/index.ts', () => {
     const responder = YoutubeResponder('', createAxiosMock({
       'GET https://www.googleapis.com/youtube/v3/search': {
         status: 200,
-        response: { items: [] }
-      }
+        response: { items: [] },
+      },
     }));
 
     return Promise.resolve()
@@ -52,8 +52,8 @@ describe('discord-bot/responders/youtube/index.ts', () => {
     const responder = YoutubeResponder('', createAxiosMock({
       'GET https://www.googleapis.com/youtube/v3/search': {
         status: 500,
-        response: {}
-      }
+        response: {},
+      },
     }));
 
     return Promise.resolve()

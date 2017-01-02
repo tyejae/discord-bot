@@ -11,7 +11,7 @@ export default (config: { token: string, googleCseId: string, googleCseKey: stri
   const responder = createResponder(
     PingModule(),
     ImageModule({ googleCseId, googleCseKey  }),
-    YoutubeModule(youtubeApiKey)
+    YoutubeModule(youtubeApiKey),
   );
 
   client.on('message', (message: Message) => {

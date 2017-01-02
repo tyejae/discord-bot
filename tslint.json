@@ -20,7 +20,7 @@
         ],
         "quotemark": [
             true,
-            "simple"
+            "single"
         ],
         "semicolon": [
             true,
@@ -64,11 +64,18 @@
         ],
         "quotemark": [
             true,
-            "simple"
+            "single"
         ],
         "semicolon": [
             true,
             "always"
+        ],
+        "trailing-comma": [
+            true,
+            {
+              "multiline": "always",
+              "singleline": "never"
+            }
         ],
         "triple-equals": [
             true

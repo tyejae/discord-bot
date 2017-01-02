@@ -15,7 +15,7 @@ export default (...modules: ((message: string) => Promise<string>)[]) => {
     getReplyStream() {
       return replies
         .filter(({ response }) => !!response);
-    }
+    },
   };
 };
 
