@@ -1,0 +1,44 @@
+{
+  "name": "discord-bot",
+  "description": "A bot for discord",
+  "repository": "https://github.com/chadrien/discord-bot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["discord", "bot"],
+  "env": {
+    "BOT_NAME": {
+      "description": "Your bot name",
+      "value": "bot"
+    },
+    "DISCORD_TOKEN": {
+      "description": "Your discord API token"
+    },
+    "GOOGLE_CSE_ID": {
+      "description": "Your Google Custom Search ID"
+    },
+    "GOOGLE_CSE_KEY": {
+      "description": "Your Google Custom Search key"
+    },
+    "YOUTUBE_API_KEY": {
+      "description": "Your Youtube API key"
+    },
+    "HEROKU_KEEPALIVE_URL": {
+      "description": "The URL to your heroku app",
+      "value": "https://<your-app-name>.herokuapp.com/"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Set to false to devDependencies are installed as well",
+      "value": "false"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "cron": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "scheduler"
+  ]
+}
