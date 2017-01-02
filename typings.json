@@ -2,6 +2,6 @@
   "name": "discord-bot",
   "dependencies": {},
   "globalDependencies": {
-    "discord": "github:acdenisSK/discord.js-typings/discord.d.ts"
+    "discord": "github:acdenisSK/discord.js-typings/index.d.ts#2cca8bc35"
   }
 }
