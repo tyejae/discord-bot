@@ -2,8 +2,8 @@
 
 A bot for discord.
 
-[![Build Status](https://img.shields.io/travis/chadrien/discord-bot.svg?maxAge=2592000)](https://travis-ci.org/chadrien/discord-bot)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/chadrien/discord-bot.svg?maxAge=2592000)](https://codeclimate.com/github/chadrien/discord-bot/coverage)
+[![Build Status](https://img.shields.io/travis/chadrien/discord-bot.svg)](https://travis-ci.org/chadrien/discord-bot)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/chadrien/discord-bot.svg)](https://codeclimate.com/github/chadrien/discord-bot/coverage)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/chadrien/discord-bot/)
 
