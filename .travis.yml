@@ -3,6 +3,14 @@ node_js:
   - node
 before_install:
   - node ./contrib/travis/npm-install-fix.js
+before_script:
+  - $(npm bin)/typings install
 script:
   - npm run lint
-  - npm test
+  - npm run test-coverage
+after_success:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < coverage/lcov.info
+addons:
+  code_climate:
+    repo_token: 3d5d2c5781343085da94e45b3f114c3c26ef71176291f96515771bc106f0b379

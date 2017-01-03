@@ -8,7 +8,8 @@
   "scripts": {
     "start-dev": "NODE_PATH=. ts-node bot.ts",
     "lint": "NODE_PATH=. tslint 'discord-bot/**/*.ts' && echo OK",
-    "test": "NODE_PATH=. mocha --require ts-node/register discord-bot/**/*.spec.ts"
+    "test": "NODE_PATH=. mocha --compilers ts:ts-node/register discord-bot/**/*.spec.ts",
+    "test-coverage": "NODE_PATH=. ts-node $(npm bin)/istanbul cover _mocha -- 'discord-bot/**/*.spec.ts'"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/mocha": "^2.2.35",
     "@types/node": "^0.0.2",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.2.0",
     "ts-node": "^1.7.0",
     "tslint": "^4.0.2",

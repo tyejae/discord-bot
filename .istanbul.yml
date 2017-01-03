@@ -1,0 +1,8 @@
+instrumentation:
+  root: ./discord-bot
+  include-all-sources: true
+  extensions:
+    - .ts
+  excludes:
+    - '**/*.spec.ts'
+    - 'utils/test.ts'
