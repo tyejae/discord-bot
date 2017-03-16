@@ -1,16 +1,16 @@
 {
   "name": "discord-bot",
   "description": "A bot for discord",
-  "repository": "https://github.com/chadrien/discord-bot",
+  "repository": "https://github.com/tyejae/discord-bot",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["discord", "bot"],
   "env": {
     "BOT_NAME": {
-      "description": "Your bot name",
+      "description": "tye-hg-bot",
       "value": "bot"
     },
     "DISCORD_TOKEN": {
-      "description": "Your discord API token"
+      "description": "MjkxMDUwMzA0OTI4MDg4MDc0.C6yDEQ.VONz2gGuuLyd4ghCAM1rEJ1xdb0"
     },
     "GOOGLE_CSE_ID": {
       "description": "Your Google Custom Search ID"
